@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortFolio</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
@@ -15,11 +17,15 @@
     <header class="header">
         <a href="#" class="logo">PortFolio</a>
         <nav class="navbar">
-            <a href="#" style="--i:1" class="active">Home</a>
-            <a href="#about" style="--i:2">About</a>
-            <a href="#services" style="--i:4">Services</a>
-            <a href="#Skills" style="--i:3">Skills</a>
-            <a href="#contact" style="--i:5">Contact</a>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="#" style="--i:1" class="active">Home</a></li>
+                <li><a href="#about" style="--i:2">About</a></li>
+                <li><a href="#services" style="--i:4">Services</a></li>
+                <li><a href="#Skills" style="--i:3">Skills</a></li>
+                <li><a href="#contact" style="--i:5">Contact</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
         </nav>
     </header>
     <section class="home">
@@ -182,7 +188,7 @@
                             <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                             <circle class="path path-3" cx="100" cy="100" r="80"></circle>
                         </svg>
-                        <div class="percentage">75%</div>
+                        <div class="percentage">80%</div>
                         <div class="text">Probelm solving</div>
                     </div>
                     <div class="radial-bar">
