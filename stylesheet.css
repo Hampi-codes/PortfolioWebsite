@@ -35,6 +35,11 @@ body {
     animation: slideRight 1s ease forwards;
 }
 
+.mainMenu{
+    display: flex;
+    list-style: none;
+}
+
 .navbar a {
     display: inline-block;
     font-size: 25px;
@@ -46,6 +51,18 @@ body {
     opacity: 0;
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
+}
+
+.openMenu{
+    font-size: 25px;
+    display: none; 
+    cursor: pointer;
+}
+
+.closeMenu{
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
 }
 
 .navbar a:hover , .navbar a:focus{
@@ -527,7 +544,7 @@ section {
 
 @keyframes animate-path1 {
     100% {
-        stroke-dashoffset: 12;
+        stroke-dashoffset: 20;
         ;
     }
 }
@@ -541,14 +558,14 @@ section {
 
 @keyframes animate-path3 {
     100% {
-        stroke-dashoffset: 25;
+        stroke-dashoffset: 75;
         ;
     }
 }
 
 @keyframes animate-path4 {
     100% {
-        stroke-dashoffset: 50;
+        stroke-dashoffset: 30;
         ;
     }
 }
@@ -864,6 +881,35 @@ form textarea {
 }
 
 @media only screen and (max-width: 768px) {
+    .header{
+        padding: 1% 2%;
+    }
+    .mainMenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #051129;
+        transition: top 1s ease;
+        display: none;
+    }
+    .navbar a::after{
+        background: none;
+    }
+    .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .openMenu{
+        display: block;
+    }
     .about{
         display: flex !important;
         justify-content: center !important;
