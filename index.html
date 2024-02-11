@@ -268,13 +268,13 @@
             </div>
         </div>
         <div class="contact-info">
-            <form action="">
-                <input type="" placeholder="Enter Your Name" required>
-                <input type="email" placeholder="Enter Your Email" required>
-
-                <input type="" placeholder="Enter your Subject">
-                <textarea name="" id="" cols="40" rows="10" placeholder="Enter your message" required></textarea>
-                <input type="submit" value="submit" class="send">
+            <form name="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="5dc91eb8-623f-4ac1-915b-477db657a404">
+                <input type="text" name="Name:" placeholder="Enter Your Name" required>
+                <input type="email" name="Email:" placeholder="Enter Your Email" required>
+                <input type="text" name="Subject:" placeholder="Enter your Subject" required>
+                <textarea name="message" id="" cols="40" rows="10" placeholder="Enter your message" required></textarea>
+                <input type="submit" value="submit" class="submitButton" onclick="submitForm()">
             </form>
         </div>
     </section>

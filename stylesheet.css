@@ -778,19 +778,18 @@ form textarea {
     outline: none;
     width: 90%;
     padding: 18px;
-    background: #555557;
     color: #000;
     font-size: 1rem;
     margin-bottom: 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 
 .contact-info textarea {
     resize: none;
-    height: 220px;
+    height: 180px;
 }
 
-.contact-info form .send {
+.contact-info form .submitButton {
     display: inline-block;
     padding: 14px 60px;
     background: #b3f6f2;
@@ -803,9 +802,10 @@ form textarea {
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
+    cursor: pointer;
 }
 
-.contact-info form .send:hover {
+.contact-info form .submitButton:hover {
     box-shadow: 0 0 5px #b3f6f2, 0 0 25px #b3f6f2;
 }
 
