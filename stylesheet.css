@@ -35,7 +35,7 @@ body {
     animation: slideRight 1s ease forwards;
 }
 
-.mainMenu{
+.mainMenu {
     display: flex;
     list-style: none;
 }
@@ -53,22 +53,24 @@ body {
     animation-delay: calc(.2s * var(--i));
 }
 
-.openMenu{
-    font-size: 25px;
-    display: none; 
-    cursor: pointer;
-}
-
-.closeMenu{
+.openMenu {
     font-size: 25px;
     display: none;
     cursor: pointer;
 }
 
-.navbar a:hover , .navbar a:focus{
-   color: whitesmoke;
+.closeMenu {
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
 }
-.navbar a::after{
+
+.navbar a:hover,
+.navbar a:focus {
+    color: whitesmoke;
+}
+
+.navbar a::after {
     content: '';
     height: 3px;
     width: 100%;
@@ -81,7 +83,9 @@ body {
     pointer-events: none;
 
 }
-.navbar a:hover::after, .navbar a:focus::after{
+
+.navbar a:hover::after,
+.navbar a:focus::after {
     opacity: 1;
 }
 
@@ -131,9 +135,11 @@ body {
 .skillspan {
     color: #b3f6f2;
 }
-.skills{
+
+.skills {
     display: flex;
 }
+
 .home-content h1 {
     font-size: 56px;
     font-weight: 700;
@@ -256,7 +262,7 @@ body {
     color: #b3f6f2;
 }
 
-#changingTextH2{
+#changingTextH2 {
     font-size: 30px;
 }
 
@@ -275,7 +281,6 @@ body {
     background-color: transparent;
     padding: 40px;
     font-size: 13px;
-    font-weight: 13px;
     border-right: 10px;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
@@ -686,7 +691,7 @@ section {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 3rem;
-    padding-left: 30px;
+    padding: 0 20px;
     margin-top: 130px;
 }
 
@@ -708,7 +713,6 @@ section {
 }
 
 .contact-text p {
-    color: rgb(177, 177, 177);
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 2rem;
@@ -881,10 +885,34 @@ form textarea {
 }
 
 @media only screen and (max-width: 768px) {
-    .header{
+    .header {
         padding: 1% 2%;
     }
-    .mainMenu{
+
+    .home {
+        background: url(Images/MobileHome-BG.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+    }
+
+    .home-content h1 {
+        font-size: 35px;
+    }
+
+    #changingTextH2 {
+        font-size: 20px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .mainMenu {
         height: 100vh;
         position: fixed;
         top: 0;
@@ -898,64 +926,143 @@ form textarea {
         transition: top 1s ease;
         display: none;
     }
-    .navbar a::after{
+
+    .navbar a::after {
         background: none;
     }
-    .closeMenu{
+
+    .closeMenu {
         display: block;
         position: absolute;
         top: 20px;
         right: 20px;
     }
-    .openMenu{
+
+    .openMenu {
         display: block;
     }
-    .about{
+
+    .about {
         display: flex !important;
         justify-content: center !important;
+        gap: 0;
     }
-    .about-img img{
-        padding: 0 ;
-        width: 350px
+
+    .services-list div {
+        padding: 20px;
     }
-    .about-text{
+
+    .about-img img {
+        padding: 0;
+        width: 250px
+    }
+
+    .about-text {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0 5% 0 5%;
     }
-    .about-text p{
+
+    .about-text p {
+        font-size: 16px;
         margin-bottom: 2rem;
     }
-    .about-text h4{
+
+    .about-text h4 {
+        font-size: 20px;
         margin: 10px 0 10px;
     }
-    .btn-box{
+
+    .btn-box {
         width: auto;
     }
-    .container1{
-        height: auto;
-        margin-left: 0;
-        padding: 40px 90px;
+
+    .sub-title {
+        padding-bottom: 20px;
     }
-    .skills{
+
+    .services-list {
+        margin-top: 10px;
+    }
+
+    .services-list div i {
+        margin-bottom: 10px;
+    }
+
+    .services-list div h2 {
+        font-size: 25px;
+    }
+
+    #services {
+        margin-bottom: 2rem;
+    }
+
+    .container1 {
+        height: auto;
+        width: 20rem;
+        margin-left: 0;
+        padding: 20px 20px;
+    }
+
+    .skills {
         flex-direction: column;
     }
-    .contact{
+
+    .contact {
         display: flex;
         gap: 1rem;
         margin-top: 30px;
     }
-    .contact-text h2,.main-text h2, .sub-titileSkill, .sub-title, .about-text h2{
-        font-size: 40px;
+
+    .contact-text h2,
+    .main-text h2,
+    .sub-titileSkill,
+    .sub-title,
+    .about-text h2 {
+        font-size: 30px;
     }
-    .main-text{
+
+    .container {
+        padding: 30px;
+    }
+
+    .main-text {
         padding-top: 10px;
         margin-top: 10px;
     }
-    .protfolio-content{
-        padding: 30px 70px 30px 70px;
+
+    .protfolio-content {
+        padding: 30px 50px 30px 50px;
+        grid-template-columns: repeat(auto-fit, minmax(180px, auto));
         gap: 30px;
     }
 
+    .contact-icons {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contact-icons i {
+        margin: 20px auto 20px auto;
+    }
+
+    .contact-list {
+        margin-bottom: 1rem;
+    }
+
+    .contact-text h4 {
+        margin: 10px 0;
+    }
+
+    .contact-text p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .contact-info form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
