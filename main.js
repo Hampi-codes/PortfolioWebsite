@@ -31,3 +31,14 @@ function close() {
       mainMenu.style.display = "none"
    }
 }
+
+function submitForm() {
+   var form = document.forms["contact-form"];
+   if (form["Name:"].value.trim() === "" || form["Email:"].value.trim() === "" || form["Subject:"].value.trim() === "" || form["message"].value.trim() === "") {
+     alert("Please fill in all required fields");
+     return false; 
+   }
+   form.submit();
+   form.reset();
+   return true;
+ }
