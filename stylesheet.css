@@ -269,7 +269,7 @@ body {
 }
 
 .container {
-    padding: 90px;
+    padding: 50px;
 }
 
 .services-list {
@@ -277,31 +277,38 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    overflow: hidden;
+    padding: 20px;
 }
 
-.services-list div {
+.swiper-button-next,
+.swiper-button-prev {
+    top: unset;
+}
+
+.services-card {
     background-color: transparent;
-    padding: 40px;
+    padding: 30px;
     font-size: 13px;
     border-right: 10px;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
-    box-shadow: 1px 1px 20px #4977d4,
-        1px 1px 40px #b3f6f2;
+    box-shadow: 1px 1px 15px #4977d4,
+        1px 1px 20px #b3f6f2;
 }
 
-.services-list div i {
+.services-card i {
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-.services-list div h2 {
+.services-card h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.services-list div a {
+.services-card a {
     text-decoration: none;
     color: #000000;
     font-size: 12px;
@@ -328,7 +335,7 @@ body {
     box-shadow: 0 0 5px #b3f6f2, 0 0 25px #b3f6f2;
 }
 
-.services-list div:hover {
+.services-card:hover {
     transform: translateY(-10px);
 }
 
@@ -337,7 +344,7 @@ section {
     flex-wrap: wrap;
 }
 
-.skillsSection{
+.skillsSection {
     justify-content: center;
 }
 
@@ -894,6 +901,12 @@ form textarea {
 }
 
 @media only screen and (max-width: 768px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
     .header {
         padding: 1% 2%;
     }
@@ -957,7 +970,7 @@ form textarea {
         gap: 0;
     }
 
-    .services-list div {
+    .services-card {
         padding: 20px;
     }
 
@@ -995,11 +1008,11 @@ form textarea {
         margin-top: 10px;
     }
 
-    .services-list div i {
+    .services-card i {
         margin-bottom: 10px;
     }
 
-    .services-list div h2 {
+    .services-card h2 {
         font-size: 25px;
     }
 
