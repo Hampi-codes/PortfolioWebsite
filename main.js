@@ -42,3 +42,33 @@ function submitForm() {
    form.reset();
    return true;
  }
+
+ document.addEventListener('DOMContentLoaded', function () {
+   // Initialize Swiper
+   const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 40,
+      navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+         600: {
+            slidesPerView: 2,
+         },
+         992: {
+            slidesPerView: 3,
+         },
+      },
+   });
+
+   // Add event listeners for the next and previous buttons
+   document.querySelector('.swiper-button-next').addEventListener('click', function () {
+      swiper.slideNext();
+   });
+
+   document.querySelector('.swiper-button-prev').addEventListener('click', function () {
+      swiper.slidePrev();
+   });
+});
+

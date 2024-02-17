@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortFolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
         integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
@@ -37,7 +38,7 @@
                 <br>I have drive to learn more and more about Web-Dev
             </p>
             <div class="home-sic">
-                <a href="https://shorturl.at/irACD"style="--i:7"><i class='bx bxl-facebook'></i></a>
+                <a href="https://shorturl.at/irACD" style="--i:7"><i class='bx bxl-facebook'></i></a>
                 <a href="https://www.instagram.com/hampi_lifts/" style="--i:8"><i class='bx bxl-instagram'></i></a>
                 <a href="https://github.com/Hampi-codes" style="--i:9"><i class='bx bxl-github'></i></a>
                 <a href="https://shorturl.at/mLW48" style="--i:10"><i class='bx bxl-youtube'></i></a>
@@ -72,40 +73,48 @@
         <div class="services" id="services">
             <div class="container">
                 <h1 class="sub-title">My<span>Services</span></h1>
-                <div class="services-list">
-                    <div>
-                        <i class='bx bx-code-alt' style='color:#b3f6f2'></i>
-                        <h2>UI/UX Design</h2>
-                        <p>
-                            As a budding UI/UX designer, I specialize in crafting visually engaging and user-centric
-                            digital
-                            experiences that seamlessly blend aesthetics with intuitive functionality to elevate your
-                            brand's online presence
-                        </p>
-                        <a href="#" class="read">Learn More</a>
+                <div class="services-list swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide services-card">
+                            <i class='bx bx-code-alt' style='color:#b3f6f2'></i>
+                            <h2>UI/UX Design</h2>
+                            <p>
+                                As a budding UI/UX designer, I specialize in crafting visually engaging and user-centric
+                                digital
+                                experiences that seamlessly blend aesthetics with intuitive functionality to elevate
+                                your
+                                brand's online presence
+                            </p>
+                            <a href="#" class="read">Learn More</a>
+                        </div>
+                        <div class="swiper-slide services-card">
+                            <i class='bx bx-crop' style='color:#b3f6f2'></i>
+                            <h2>Frontend</h2>
+                            <p>
+                                As a beginner frontend developer, I offer innovative and responsive web solutions to
+                                enhance
+                                user experiences and bring your digital vision to life with cutting-edge design and
+                                functionality
+                            </p>
+                            <a href="#" class="read">Learn More</a>
+                        </div>
+                        <div class="swiper-slide services-card">
+                            <i class='bx bxl-apple' style='color:#b3f6f2'></i>
+                            <h2>Flutter</h2>
+                            <p>
+                                Flutter developer offering innovative mobile app solutions with a passion for clean code
+                                and
+                                engaging user
+                                experiences. Committed to turning ideas into dynamic and functional applications
+                                tailored to
+                                meet your unique needs.
+                            </p>
+                            </p>
+                            <a href="#" class="read">Learn More</a>
+                        </div>
                     </div>
-                    <div>
-                        <i class='bx bx-crop' style='color:#b3f6f2'></i>
-                        <h2>Frontend</h2>
-                        <p>
-                            As a beginner frontend developer, I offer innovative and responsive web solutions to enhance
-                            user experiences and bring your digital vision to life with cutting-edge design and
-                            functionality
-                        </p>
-                        <a href="#" class="read">Learn More</a>
-                    </div>
-                    <div>
-                        <i class='bx bxl-apple' style='color:#b3f6f2'></i>
-                        <h2>Flutter</h2>
-                        <p>
-                            Flutter developer offering innovative mobile app solutions with a passion for clean code and
-                            engaging user
-                            experiences. Committed to turning ideas into dynamic and functional applications tailored to
-                            meet your unique needs.
-                        </p>
-                        </p>
-                        <a href="#" class="read">Learn More</a>
-                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </div>
@@ -280,6 +289,7 @@
         <p>Developed by Yogesh kuamr 2023 </p>
     </div>
     <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 
