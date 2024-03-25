@@ -299,13 +299,17 @@ body {
 
 .services-card i {
     font-size: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .services-card h2 {
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+.services-card p {
+    font-size: ;
 }
 
 .services-card a {
@@ -361,6 +365,11 @@ section {
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
+}
+
+.project_img{
+    width: 100%;
+    border-radius: 10px;
 }
 
 .bar {
