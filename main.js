@@ -48,6 +48,9 @@ function submitForm() {
    const swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
       spaceBetween: 40,
+      pagination: {
+         el: '.swiper-pagination',
+       },
       navigation: {
          nextEl: '.swiper-button-next',
          prevEl: '.swiper-button-prev',

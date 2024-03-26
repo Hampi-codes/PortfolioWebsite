@@ -5,6 +5,10 @@
     scroll-behavior: smooth;
     font-family: 'poppins', sans-serif;
 }
+:root{
+    --swiper-theme-color: #fff;
+    --swiper-pagination-bullet-inactive-color: #fff;
+}
 
 body {
     color: #ededed;
@@ -286,6 +290,11 @@ body {
     top: unset;
 }
 
+.swiper-pagination{
+    position: static;
+    display: none;
+}
+
 .services-card {
     background-color: transparent;
     padding: 30px;
@@ -309,7 +318,7 @@ body {
 }
 
 .services-card p {
-    font-size: ;
+    font-size: 16px;
 }
 
 .services-card a {
@@ -908,7 +917,11 @@ form textarea {
         opacity: 1;
     }
 }
-
+@media only screen and (max-width: 657px){
+    .swiper-pagination{
+        display: block;
+    }
+}
 @media only screen and (max-width: 768px) {
 
     .swiper-button-next,
@@ -1026,7 +1039,7 @@ form textarea {
     }
 
     #services {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     .container1 {
