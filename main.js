@@ -1,7 +1,7 @@
 var Typed = new Typed(".changingText", {
-   strings: [' Frontend Developer ', 'Web Developer', 'YouTuber'],
-   typeSpeed: 100,
-   backSpeed: 100,
+   strings: [' Frontend Developer ', 'Web Developer', 'React Developer'],
+   typeSpeed: 50,
+   backSpeed: 50,
    backDelay: 1000,
    loop: true
 });
